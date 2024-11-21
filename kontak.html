@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Unindra</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #393596;
+            height: 30px;
+            align-items: left;
+            justify-content: space-around;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        .content {
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+        }
+        .content h2 {
+            font-size: 24px;
+            color: #3b1c79;
+            text-align: left;
+            padding: 20px;
+        }
+        .text-section {
+            width: 60%;
+            padding-right: 10px;
+        }
+        .text-section h2 {
+            font-size: 24px;
+        }
+        .text-section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .image-section {
+            width: 50%;
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+        /* Adding styles for "Ada Pertanyaan?" */
+        .questions {
+            color: #393596;
+            font-size: 24px;
+        }
+        /* Larger input fields */
+        input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        form {
+            margin-top: 20px; /* Adding margin around the form */
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: #393596; text-align: center;">
+        <img src="logo.png" alt="Unindra">
+    </div>
+    <header>
+        <a href="home.html">Home</a>
+        <a href="profil.html">Profil</a>
+        <a href="akademik.html">Akademik</a>
+        <a href="organisasi.html">Organisasi</a>
+        <a href="kontak.html">Kontak</a>
+    </header>
+    <h2 class="questions">Ada Pertanyaan?</h2>
+    <form>
+        <table border="1">
+            <tr>
+                <td>Nama : </td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon : </td>
+                <td>
+                    <select name="country-code" required>
+                        <option value="+62">+62 (Indonesia)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+971">+971 (UEA)</option>
+                        <option value="+1">+1 (USA)</option>
+                        <!-- Add more country codes as needed -->
+                    </select>
+                    <input type="tel" name="phone" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Negara Asal : </td>
+                <td>
+                    <select name="country" required>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="uea">UEA</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pesan/Keluhan : </td>
+                <td><textarea name="message" rows="4" required></textarea></td>
+            </tr>
+        </table>
+        <div style="text-align: left; margin-top: 20px;">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
